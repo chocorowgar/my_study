@@ -59,39 +59,51 @@
 
     <h3>Tutorials</h3>
     
-    <a href="https://www.w3schools.com/git/git_getstarted.asp?remote=github.html">Git Install, Configure Git, Creating Git Folder, Initialize Git</a>
+    <p><a href="https://www.w3schools.com/git/git_getstarted.asp?remote=github.html">Git Install, Configure Git, Creating Git Folder, Initialize Git</a></p>
     <p>Additional Information<img src="Git/configure.png"></p>
 
-    <a href="https://www.w3schools.com/git/git_new_files.asp?remote=github">Git Status</a>
+    <p><a href="https://www.w3schools.com/git/git_new_files.asp?remote=github">Git Status</a></p>
+
+    <p><a href="https://www.w3schools.com/git/git_staging_environment.asp?remote=github">Git Staging(Git Add)</a></p>
+
+    <p><a href="https://www.w3schools.com/git/git_commit.asp?remote=github">Git Commit</a></p>
+
+    <p><a href="https://www.w3schools.com/git/git_branch.asp?remote=github">Git Branch</a></p>
+
+    <p><a href="https://www.w3schools.com/git/git_branch_merge.asp?remote=github">Git Merge</a></p>
 
     <hr>
 
     <h3>Stages of a File in Git</h3>
-    <table>
-        <tr>
-            <td>Untracked</td>
-            <td>Files that are in your working directory, but not added to the repository</td>
-        </tr>
-        <tr>
-            <td>Tracked</td>
-            <td>Files that Git knows about and are added to the repository<br>
-                <table>
-                    <tr>
-                        <td>Modified</td>
-                        <td>A file that has been edited but not staged</td>
-                    </tr>
-                    <tr>
-                        <td>Staged</td>
-                        <td>A file that has been added to the staging area and is ready to be committed</td>
-                    </tr>
-                    <tr>
-                        <td>Committed(i.e. Unmodified yet)</td>
-                        <td>Changes that are saved in the repository</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+    <ul>
+        <li><strong>Untracked</strong>: Files that are in your working directory, but not added to the repository</li>
+        <ul>
+            <li><strong>Unstaged</strong>: A file that has not been added to the staging area</li>
+            <li><strong>Staged</strong>: A file that has been added to the staging area and is ready to be committed</li>
+        </ul>        
+        <li><strong>Tracked</strong>: Files that Git knows about and are added to the repository</li>
+        <ul>
+            <li><strong>Modified</strong>: A file that has been edited but not staged</li>
+            <li><strong>Staged</strong>: A file that has been added to the staging area and is ready to be committed</li>
+            <li><strong>Committed(i.e. Unmodified yet)</strong>: Changes that are saved in the repository</li>
+        </ul>
+    </ul>
+
+    <hr>
+
+    <h3>Note on Branches and Checkout</h3>
+    
+    <p><strong>Branch</strong>: will copy all the tracked files to new created branch(also tracked)</p>
+    <p><strong>ls</strong>: when you type "ls", it will show all the files (including Untracked files and tracked files)</p>
+    <p><strong>Checkout(switch current working branch)</strong>: the files which are untracked(including unstaged, and staged but untracked) will remain in "ls", while the files which are tracked will be overwritten by the tracked files in the destination branch. Therefore, <span style="color: red;">it is required to make all the tracked files commited before doing checkout</span></p>
+
+    <hr>
+
+    <h2>TODO list</h2>
+    <ul>
+        <li>git stash</li>
+        <li>git merge: fast forward merge v.s. recursive merge</li>
+    </ul>
 
 </body>   
 
